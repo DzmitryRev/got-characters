@@ -1,0 +1,37 @@
+.dropdown__container {
+    position: relative;
+}
+
+.dropdown__title {
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown__list {
+    position: absolute;
+    right: 0;
+    width: 140px;
+    list-style: none;
+    background-color: #ececec;
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.dropdown__list > li {
+    padding: 5px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+.dropdown__list > li > * {
+    cursor: pointer;
+}
+
+.dropdown__list > li:hover {
+    background-color: #dddddd;
+}

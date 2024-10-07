@@ -1,0 +1,8 @@
+.not-found-page {
+    text-align: center;
+}
+
+.not-found-page__description,
+.not-found-page__try-later {
+    font-style: italic;
+}

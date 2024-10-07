@@ -1,0 +1,47 @@
+.sorting {
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.sorting__params-container {
+    display: inline-block;
+}
+
+.sorting__heading,
+.sorting__param {
+    font-size: 0.8rem;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.sorting__param {
+    cursor: pointer;
+}
+
+.sorting__param_active {
+    font-weight: 600;
+}
+
+.sorting__param:hover {
+    text-decoration: underline;
+}
+
+.arrow-up,
+.arrow-down {
+    display: inline-block;
+    margin-left: 5px;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    transform: rotate(45deg);
+}
+
+.arrow-up {
+    top: 1.4px;
+}
+
+.arrow-down {
+    position: relative;
+    bottom: 3px;
+    transform: rotate(-135deg);
+}

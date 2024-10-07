@@ -1,26 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ErrorBoundaryLayout, MainLayout } from "./components/layouts";
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import Registration from "./pages/Registration/Registration";
+import SuccessfulRegistration from "./pages/SuccessfulRegistration/SuccessfulRegistration";
+import Character from "./pages/Character/Character";
+import FavoriteCharacters from "./pages/FavoriteCharacters/FavoriteCharacters";
+import { LoadingScreen } from "./components/LoadingScreen";
+
+const NotFound = React.lazy(() => import("./pages/NotFound/NotFound"));
+
+export const router = createBrowserRouter([
+    {
+        element: <ErrorBoundaryLayout />,
+        children: [
+            {
+                element: <MainLayout />,
+                children: [
+                    {
+                        path: "/",
+                        element: <Home />,
+                    },
+                    {
+                        path: "login",
+                        element: <Login />,
+                    },
+                    {
+                        path: "registration",
+                        element: <Registration />,
+                    },
+                    {
+                        path: "successful-registration",
+                        element: <SuccessfulRegistration />,
+                    },
+                    {
+                        path: "characters/:characterId",
+                        element: <Character />,
+                    },
+                    {
+                        path: "favorite",
+                        element: <FavoriteCharacters />,
+                    },
+                    {
+                        path: "*",
+                        element: (
+                            <React.Suspense fallback={<LoadingScreen />}>
+                                <NotFound />
+                            </React.Suspense>
+                        ),
+                    },
+                ],
+            },
+        ],
+    },
+]);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
