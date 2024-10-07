@@ -1,0 +1,13 @@
+.favorite-characters-page {
+    padding: 20px 0;
+    text-align: center;
+    color: var(--main-text-color);
+}
+.favorite-characters-page__title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.favorite-characters-page__no-characters {
+    font-size: 1.5rem;
+}

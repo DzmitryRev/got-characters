@@ -1,0 +1,8 @@
+.error-boundary {
+    text-align: center;
+}
+
+.error-boundary__description,
+.error-boundary__try-later {
+    font-style: italic;
+}

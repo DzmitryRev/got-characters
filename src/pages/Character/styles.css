@@ -1,0 +1,54 @@
+.character-page {
+    padding: 20px 0;
+}
+
+.character-page__back-button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.character-page__image-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.character-page__description-container {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.character-page__fullname {
+    margin-bottom: 5px;
+
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.character-page__family {
+    margin-bottom: 5px;
+
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.character-page__title {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.arrow {
+    display: inline-block;
+    position: relative;
+    top: -1.5px;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    margin-right: 2px;
+    transform: rotate(-135deg);
+}

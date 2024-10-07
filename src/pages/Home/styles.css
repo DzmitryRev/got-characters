@@ -1,0 +1,15 @@
+.main-page {
+    padding: 20px 0;
+}
+.main-page__title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--main-text-color);
+    cursor: default;
+}
+
+.main-page__search-input-container {
+    margin-bottom: 20px;
+    padding: 0 20px;
+}

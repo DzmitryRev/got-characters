@@ -1,0 +1,26 @@
+.button {
+    font-family: inherit;
+    padding: 10px 14px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button_transparent {
+    color: var(--main-text-color);
+}
+
+.button_transparent:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.button_blue {
+    color: #fff;
+    background-color: var(--primary-blue);
+}
+
+.button_blue:hover {
+    background-color: var(--primary-blue-hover);
+}
